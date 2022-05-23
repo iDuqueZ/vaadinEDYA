@@ -47,9 +47,9 @@ public class App {
     }
 
     private void createDemoData(GroupService groupService, UserService userService, CategoryService categoryService) {
-        log.info("Creating demo data...");
+        log.info("Generando datos de demostración...");
 
-        Stream.of("Services,IT,HR,Management,Marketing,Sales,Operations,Finance".split(","))
+        Stream.of("Servicio,IT,HR,Gestión, Marketing, Ventas, Operaciones, Finanzas".split(","))
                 .map(name -> new Group(name))
                 .forEach(groupService::save);
 
@@ -99,7 +99,7 @@ public class App {
             }
         }
 
-        log.info("Demo data created.");
+        log.info("Datos de demostración creados.");
     }
 
 }

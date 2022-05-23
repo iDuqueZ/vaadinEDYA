@@ -36,7 +36,7 @@ public class CrudConFiltradoDeVista extends VerticalLayout {
                 crud.getCrudFormFactory().setUseBeanValidation(true);
                 crud.getCrudFormFactory().setVisibleProperties(
                                 CrudOperation.ADD,
-                                "name", "birthDate", "email", "salary", "phoneNumber", "maritalStatus", "groups",
+                                "nombre", "birthDate", "email", "salary", "phoneNumber", "maritalStatus", "groups",
                                 "active", "mainGroup",
                                 "password");
                 crud.getCrudFormFactory().setVisibleProperties(
@@ -61,9 +61,9 @@ public class CrudConFiltradoDeVista extends VerticalLayout {
                 // Logica
                 crud.setOperations(
                                 () -> userService.findByNameContainingIgnoreCase(filter.getValue()),
-                                user -> userService.save(user),
-                                user -> userService.save(user),
-                                user -> userService.delete(user));
+                                usuario -> userService.save(usuario),
+                                usuario -> userService.save(usuario),
+                                usuario -> userService.delete(usuario));
 
                 filter.addValueChangeListener(e -> crud.refreshGrid());
         }

@@ -8,7 +8,7 @@ public class Utilidades {
         String lowerCase = StringUtils.join(
                 StringUtils.splitByCharacterTypeCamelCase(clazz.getSimpleName()),
                 " ").toLowerCase().replace("view", "").replace("crud", "CRUD");
-
+        
         return lowerCase.substring(0, 1).toUpperCase() + lowerCase.substring(1);
     }
 

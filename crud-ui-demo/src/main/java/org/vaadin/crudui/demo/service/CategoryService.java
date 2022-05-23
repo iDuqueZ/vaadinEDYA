@@ -39,7 +39,7 @@ public class CategoryService {
 
     //if is its on parent
     if (parent != null && parent.equals(category))
-      throw new IllegalArgumentException("Category can not be its own parent");
+      throw new IllegalArgumentException("La categoría no puede ser su propia matriz");
   }
 
   @Transactional
