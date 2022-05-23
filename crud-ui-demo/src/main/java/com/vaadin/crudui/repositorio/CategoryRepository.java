@@ -1,9 +1,9 @@
-package org.vaadin.crudui.demo.repository;
+package com.vaadin.crudui.repositorio;
 
 
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.vaadin.crudui.demo.entity.Category;
+import com.vaadin.crudui.entidades.Category;
 
 /**
  * @author Boniface Chacha

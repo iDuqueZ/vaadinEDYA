@@ -1,4 +1,4 @@
-package org.vaadin.crudui.demo.service;
+package com.vaadin.crudui.servicio;
 
 import java.util.HashSet;
 import java.util.List;
@@ -8,8 +8,8 @@ import java.util.stream.Collectors;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
-import org.vaadin.crudui.demo.entity.Category;
-import org.vaadin.crudui.demo.repository.CategoryRepository;
+import com.vaadin.crudui.entidades.Category;
+import com.vaadin.crudui.repositorio.CategoryRepository;
 
 /**
  * @author Boniface Chacha

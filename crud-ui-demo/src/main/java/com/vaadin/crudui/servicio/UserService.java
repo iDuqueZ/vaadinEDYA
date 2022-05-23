@@ -1,8 +1,8 @@
-package org.vaadin.crudui.demo.service;
+package com.vaadin.crudui.servicio;
 
 import org.springframework.stereotype.Service;
-import org.vaadin.crudui.demo.entity.User;
-import org.vaadin.crudui.demo.repository.UserRepository;
+import com.vaadin.crudui.entidades.User;
+import com.vaadin.crudui.repositorio.UserRepository;
 
 import java.util.List;
 

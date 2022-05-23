@@ -1,4 +1,4 @@
-package org.vaadin.crudui.demo.entity;
+package com.vaadin.crudui.entidades;
 
 import java.io.Serializable;
 import javax.persistence.Column;

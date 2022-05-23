@@ -1,10 +1,10 @@
-package org.vaadin.crudui.demo.ui.view;
+package com.vaadin.crudui.vista;
 
 import com.vaadin.flow.component.Html;
 import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.Route;
-import org.vaadin.crudui.demo.ui.MainLayout;
+import com.vaadin.crudui.ui.MainLayout;
 
 /**
  * @author Alejandro Duarte

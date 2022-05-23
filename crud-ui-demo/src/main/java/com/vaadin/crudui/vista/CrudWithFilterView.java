@@ -1,4 +1,4 @@
-package org.vaadin.crudui.demo.ui.view;
+package com.vaadin.crudui.vista;
 
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
@@ -6,11 +6,11 @@ import com.vaadin.flow.data.renderer.TextRenderer;
 import com.vaadin.flow.router.Route;
 import org.vaadin.crudui.crud.CrudOperation;
 import org.vaadin.crudui.crud.impl.GridCrud;
-import org.vaadin.crudui.demo.entity.Group;
-import org.vaadin.crudui.demo.entity.User;
-import org.vaadin.crudui.demo.service.GroupService;
-import org.vaadin.crudui.demo.service.UserService;
-import org.vaadin.crudui.demo.ui.MainLayout;
+import com.vaadin.crudui.entidades.Group;
+import com.vaadin.crudui.entidades.User;
+import com.vaadin.crudui.servicio.GroupService;
+import com.vaadin.crudui.servicio.UserService;
+import com.vaadin.crudui.ui.MainLayout;
 import org.vaadin.crudui.form.impl.field.provider.CheckBoxGroupProvider;
 import org.vaadin.crudui.form.impl.field.provider.ComboBoxProvider;
 

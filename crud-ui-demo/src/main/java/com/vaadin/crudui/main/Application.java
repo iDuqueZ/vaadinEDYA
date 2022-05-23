@@ -1,4 +1,4 @@
-package org.vaadin.crudui.demo;
+package com.vaadin.crudui.main;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,13 +7,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.event.ContextRefreshedEvent;
-import org.vaadin.crudui.demo.entity.Category;
-import org.vaadin.crudui.demo.entity.Group;
-import org.vaadin.crudui.demo.entity.MaritalStatus;
-import org.vaadin.crudui.demo.entity.User;
-import org.vaadin.crudui.demo.service.CategoryService;
-import org.vaadin.crudui.demo.service.GroupService;
-import org.vaadin.crudui.demo.service.UserService;
+import com.vaadin.crudui.entidades.Category;
+import com.vaadin.crudui.entidades.Group;
+import com.vaadin.crudui.entidades.MaritalStatus;
+import com.vaadin.crudui.entidades.User;
+import com.vaadin.crudui.servicio.CategoryService;
+import com.vaadin.crudui.servicio.GroupService;
+import com.vaadin.crudui.servicio.UserService;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

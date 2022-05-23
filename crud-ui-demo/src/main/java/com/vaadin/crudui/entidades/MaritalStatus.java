@@ -1,4 +1,4 @@
-package org.vaadin.crudui.demo.entity;
+package com.vaadin.crudui.entidades;
 
 /**
  * @author Alejandro Duarte

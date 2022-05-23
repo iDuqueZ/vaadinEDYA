@@ -1,5 +1,7 @@
-package org.vaadin.crudui.demo.ui;
+package com.vaadin.crudui.ui;
 
+import com.vaadin.crudui.vista.HomeView;
+import com.vaadin.crudui.vista.CrudWithFilterView;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.HasComponents;
 import com.vaadin.flow.component.UI;
@@ -13,8 +15,7 @@ import com.vaadin.flow.router.AfterNavigationEvent;
 import com.vaadin.flow.router.AfterNavigationObserver;
 import com.vaadin.flow.router.BeforeEnterEvent;
 import com.vaadin.flow.router.BeforeEnterObserver;
-import org.vaadin.crudui.demo.DemoUtils;
-import org.vaadin.crudui.demo.ui.view.*;
+import com.vaadin.crudui.main.DemoUtils;
 
 import java.util.HashMap;
 import java.util.Map;

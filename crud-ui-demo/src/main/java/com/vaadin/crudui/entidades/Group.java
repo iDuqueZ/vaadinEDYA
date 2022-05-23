@@ -1,4 +1,4 @@
-package org.vaadin.crudui.demo.entity;
+package com.vaadin.crudui.entidades;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

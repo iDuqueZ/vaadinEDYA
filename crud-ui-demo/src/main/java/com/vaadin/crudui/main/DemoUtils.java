@@ -1,4 +1,4 @@
-package org.vaadin.crudui.demo;
+package com.vaadin.crudui.main;
 
 import org.apache.commons.lang3.StringUtils;
 

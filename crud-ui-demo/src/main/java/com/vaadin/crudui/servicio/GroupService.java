@@ -1,8 +1,8 @@
-package org.vaadin.crudui.demo.service;
+package com.vaadin.crudui.servicio;
 
 import org.springframework.stereotype.Service;
-import org.vaadin.crudui.demo.entity.Group;
-import org.vaadin.crudui.demo.repository.GroupRepository;
+import com.vaadin.crudui.entidades.Group;
+import com.vaadin.crudui.repositorio.GroupRepository;
 
 import java.util.List;
 
