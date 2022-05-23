@@ -81,7 +81,7 @@ public class MainLayout extends AppLayout implements BeforeEnterObserver, AfterN
         Class<? extends HasComponents> viewClass = tabToView.get(tabs.getSelectedTab());
         if (!HomeView.class.equals(viewClass)) {
             HorizontalLayout footer = new HorizontalLayout(
-                    new Anchor(DemoUtils.getGitHubLink(viewClass), "Source code"));
+                    new Anchor(DemoUtils.getGitHubLink(viewClass), "Recursos, ver aquí"));
             footer.setMargin(true);
             ((HasComponents) getContent()).add(footer);
         }

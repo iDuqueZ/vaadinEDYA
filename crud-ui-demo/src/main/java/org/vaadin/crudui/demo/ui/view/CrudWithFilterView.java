@@ -21,17 +21,18 @@ public class CrudWithFilterView extends VerticalLayout {
                 // Inicializamos el CRUD
                 GridCrud<User> crud = new GridCrud<>(User.class);
 
-                // additional components
+                // Adiccionamos los componentes
                 TextField filter = new TextField();
-                filter.setPlaceholder("Filter by name");
+                filter.setPlaceholder("Buscar por nombre");
                 filter.setClearButtonVisible(true);
                 crud.getCrudLayout().addFilterComponent(filter);
 
-                // grid configuration
-                crud.getGrid().setColumns("name", "birthDate", "maritalStatus", "email", "phoneNumber", "active");
+                // Configuración de la tabla
+                crud.getGrid().setColumns("name", "birthDate", "maritalStatus", "email", "phoneNumber",
+                                "active");
                 crud.getGrid().setColumnReorderingAllowed(true);
 
-                // form configuration
+                // Configuración formularios
                 crud.getCrudFormFactory().setUseBeanValidation(true);
                 crud.getCrudFormFactory().setVisibleProperties(
                                 CrudOperation.ADD,
@@ -51,11 +52,13 @@ public class CrudWithFilterView extends VerticalLayout {
                                 new ComboBoxProvider<>("Main Group", groupService.findAll(),
                                                 new TextRenderer<>(Group::getName), Group::getName));
 
-                // layout configuration
+                // Distribución de pantalla
+                // tamaño
                 setSizeFull();
+                // Imprimimos
                 add(crud);
 
-                // logic configuration
+                // Logica
                 crud.setOperations(
                                 () -> userService.findByNameContainingIgnoreCase(filter.getValue()),
                                 user -> userService.save(user),

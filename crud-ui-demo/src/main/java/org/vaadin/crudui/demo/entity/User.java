@@ -13,9 +13,6 @@ import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * @author Alejandro Duarte
- */
 @Entity
 public class User {
 
@@ -59,8 +56,10 @@ public class User {
     public User() {
     }
 
-    public User(@NotNull String name, @Past LocalDate birthDate, @NotNull int phoneNumber, @NotNull @Email String email,@NotNull BigDecimal salary,
-                @NotNull @Size(min = 6, max = 100) String password, Boolean active, Group mainGroup, Set<Group> groups, MaritalStatus maritalStatus) {
+    public User(@NotNull String name, @Past LocalDate birthDate, @NotNull int phoneNumber, @NotNull @Email String email,
+            @NotNull BigDecimal salary,
+            @NotNull @Size(min = 6, max = 100) String password, Boolean active, Group mainGroup, Set<Group> groups,
+            MaritalStatus maritalStatus) {
         this.name = name;
         this.birthDate = birthDate;
         this.phoneNumber = phoneNumber;
@@ -75,8 +74,10 @@ public class User {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
 
         User user = (User) o;
 
