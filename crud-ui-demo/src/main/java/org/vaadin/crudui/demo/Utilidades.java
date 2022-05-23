@@ -2,7 +2,7 @@ package org.vaadin.crudui.demo;
 
 import org.apache.commons.lang3.StringUtils;
 
-public class DemoUtils {
+public class Utilidades {
 
     public static String getViewName(Class clazz) {
         String lowerCase = StringUtils.join(

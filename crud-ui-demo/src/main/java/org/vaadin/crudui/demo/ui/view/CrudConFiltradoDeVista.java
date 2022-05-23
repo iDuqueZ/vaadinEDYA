@@ -15,9 +15,9 @@ import org.vaadin.crudui.form.impl.field.provider.CheckBoxGroupProvider;
 import org.vaadin.crudui.form.impl.field.provider.ComboBoxProvider;
 
 @Route(value = "filter", layout = MainLayout.class)
-public class CrudWithFilterView extends VerticalLayout {
+public class CrudConFiltradoDeVista extends VerticalLayout {
 
-        public CrudWithFilterView(UserService userService, GroupService groupService) {
+        public CrudConFiltradoDeVista(UserService userService, GroupService groupService) {
                 // Inicializamos el CRUD
                 GridCrud<User> crud = new GridCrud<>(User.class);
 

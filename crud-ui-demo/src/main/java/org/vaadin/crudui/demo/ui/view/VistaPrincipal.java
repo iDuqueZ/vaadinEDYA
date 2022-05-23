@@ -10,9 +10,9 @@ import org.vaadin.crudui.demo.ui.MainLayout;
  * @author Alejandro Duarte
  */
 @Route(value = "", layout = MainLayout.class)
-public class HomeView extends VerticalLayout {
+public class VistaPrincipal extends VerticalLayout {
 
-    public HomeView() {
+    public VistaPrincipal() {
         add(
                 new H1("Bienvenidos este es un CRUD con Vaadin"),
                 new Html("<div>" +

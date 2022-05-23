@@ -13,7 +13,7 @@ import com.vaadin.flow.router.AfterNavigationEvent;
 import com.vaadin.flow.router.AfterNavigationObserver;
 import com.vaadin.flow.router.BeforeEnterEvent;
 import com.vaadin.flow.router.BeforeEnterObserver;
-import org.vaadin.crudui.demo.DemoUtils;
+import org.vaadin.crudui.demo.Utilidades;
 import org.vaadin.crudui.demo.ui.view.*;
 
 import java.util.HashMap;
@@ -35,10 +35,10 @@ public class MainLayout extends AppLayout implements BeforeEnterObserver, AfterN
         tabs.addSelectedChangeListener(event -> tabsSelectionChanged(event));
         addToNavbar(tabs);
 
-        addTab(HomeView.class);
+        addTab(VistaPrincipal.class);
         // addTab(SimpleCrudView.class);
         // addTab(CrudWithSplitLayoutView.class);
-        addTab(CrudWithFilterView.class);
+        addTab(CrudConFiltradoDeVista.class);
         // addTab(CrudWithLazyLoadingView.class);
         // addTab(SimpleTreeCrudView.class);
     }
@@ -50,7 +50,7 @@ public class MainLayout extends AppLayout implements BeforeEnterObserver, AfterN
     }
 
     private void addTab(Class<? extends HasComponents> clazz) {
-        Tab tab = new Tab(DemoUtils.getViewName(clazz));
+        Tab tab = new Tab(Utilidades.getViewName(clazz));
         tabs.add(tab);
         tabToView.put(tab, clazz);
         viewToTab.put(clazz, tab);
@@ -74,14 +74,14 @@ public class MainLayout extends AppLayout implements BeforeEnterObserver, AfterN
 
     public void updatePageTitle() {
         Class<? extends HasComponents> viewClass = tabToView.get(tabs.getSelectedTab());
-        UI.getCurrent().getPage().setTitle(DemoUtils.getViewName(viewClass) + " - " + "Crud con Vaadin");
+        UI.getCurrent().getPage().setTitle(Utilidades.getViewName(viewClass) + " - " + "Crud con Vaadin");
     }
 
     public void addSourceCodeAnchorToCurrentView() {
         Class<? extends HasComponents> viewClass = tabToView.get(tabs.getSelectedTab());
-        if (!HomeView.class.equals(viewClass)) {
+        if (!VistaPrincipal.class.equals(viewClass)) {
             HorizontalLayout footer = new HorizontalLayout(
-                    new Anchor(DemoUtils.getGitHubLink(viewClass), "Recursos, ver aquí"));
+                    new Anchor(Utilidades.getGitHubLink(viewClass), "Recursos, ver aquí"));
             footer.setMargin(true);
             ((HasComponents) getContent()).add(footer);
         }
