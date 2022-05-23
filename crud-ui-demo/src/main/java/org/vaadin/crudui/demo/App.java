@@ -26,14 +26,14 @@ import java.util.stream.Stream;
  * The entry point of the Spring Boot application.
  */
 @SpringBootApplication
-public class Application {
+public class App {
 
     public static final int DEMO_USERS_COUNT = UserService.USERS_COUNT_LIMIT / 2;
 
-    private static Logger log = LoggerFactory.getLogger(Application.class);
+    private static Logger log = LoggerFactory.getLogger(App.class);
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(App.class, args);
     }
 
     @Bean
