@@ -41,7 +41,7 @@ public class CrudWithFilterView extends VerticalLayout {
                                 "password");
                 crud.getCrudFormFactory().setVisibleProperties(
                                 "name", "birthDate", "email", "salary", "phoneNumber", "maritalStatus", "groups",
-                                "active", "mainGroup");
+                                "active", "mainGroup", "password");
                 crud.getCrudFormFactory().setFieldProvider("mainGroup",
                                 new ComboBoxProvider<>(groupService.findAll()));
                 crud.getCrudFormFactory().setFieldProvider("groups",
