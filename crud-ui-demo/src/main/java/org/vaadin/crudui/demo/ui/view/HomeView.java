@@ -6,9 +6,6 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.Route;
 import org.vaadin.crudui.demo.ui.MainLayout;
 
-/**
- * @author Alejandro Duarte
- */
 @Route(value = "", layout = MainLayout.class)
 public class HomeView extends VerticalLayout {
 
@@ -21,7 +18,7 @@ public class HomeView extends VerticalLayout {
                         "<li>Ivan D Duque</li>" +
                         "<li>Jaun David Garzón</li>" +
                         "<li>Juan Puche</li>" +
-                        "<li>Juliana Lugo</li>" +
+                        "<li>Yuliana Lugo</li>" +
                         "</ul>" +
                         "</div>"));
     }
